@@ -35,7 +35,7 @@
   </div>
 
   <h1>PRIVACY POLICY</h1>
-  <p class="subtitle">Last updated April 11, 2026</p>
+  <p class="subtitle">Last updated October 5, 2026</p>
 
   <p>This Privacy Notice for Mathias Matejčík ("we," "us," or "our") describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you download and use our mobile application (LogBook), or engage with us in other related ways.</p>
 
@@ -44,7 +44,7 @@
   <h2>SUMMARY OF KEY POINTS</h2>
   <p><strong>What personal information do we process?</strong> We collect personal information you provide when registering and using the app, including name, email, location, and crew member data.</p>
   <p><strong>Do we process sensitive personal information?</strong> Yes — we process crew member health data, passport numbers, and nationality when you provide it. This is processed only with your consent.</p>
-  <p><strong>Do we collect information from third parties?</strong> No.</p>
+  <p><strong>Do we collect information from third parties?</strong> We receive your subscription status from our subscription provider (RevenueCat). We do not buy data or receive it from advertisers.</p>
   <p><strong>How do we process your information?</strong> To provide and improve our Services, manage your account, and comply with law.</p>
   <p><strong>How do we keep your information safe?</strong> We use appropriate technical and organizational security measures.</p>
   <p><strong>What are your rights?</strong> Depending on your location, you may have rights to access, correct, or delete your personal information.</p>
@@ -60,8 +60,16 @@
     <li>Crew member personal data including passport numbers, date of birth, nationality, and medical notes</li>
   </ul>
   <p><strong>Sensitive Information.</strong> With your consent, we process health data (medical notes for crew members), passport numbers, national origin, and precise geolocation.</p>
-  <p><strong>Payment Data.</strong> Payments are handled by Apple and Google. We do not store payment instrument details. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's privacy policy</a> and <a href="https://policies.google.com/privacy" target="_blank">Google's privacy policy</a>.</p>
-  <p><strong>Location Data.</strong> We request location access to record your vessel's position in log entries. This is used only when you explicitly tap the GPS button in the app.</p>
+  <p><strong>Payment and Subscription Data.</strong> Payments are handled by Apple and Google; we never see or store your card details. Subscriptions are managed through RevenueCat, which receives your purchase history, your LogBook account ID, and your name and email address so we can link a subscription to your account and offer support or complimentary access. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's privacy policy</a>, <a href="https://policies.google.com/privacy" target="_blank">Google's privacy policy</a> and <a href="https://www.revenuecat.com/privacy/" target="_blank">RevenueCat's privacy policy</a>.</p>
+  <p><strong>Location Data.</strong> We use your device's location to record your vessel's position:</p>
+  <ul>
+    <li><strong>When you ask for it</strong> — tapping the GPS button, using Quick fix, or fetching weather. The position is saved with the log entry you create.</li>
+    <li><strong>In the background, only if you turn on "GPS track"</strong> in Settings, and only while a voyage is active. The recorded track is stored on your device and is not uploaded to our servers. It is used to draw your route and to decide whether a log reminder is needed.</li>
+  </ul>
+  <p>You can turn off GPS track at any time in Settings, or revoke location access in your device settings.</p>
+  <p><strong>Weather Data.</strong> When you fetch weather, the coordinates of your position are sent to Open-Meteo, a free weather service, to look up current conditions. No account details are sent.</p>
+  <p><strong>Notifications.</strong> If you enable log reminders, notifications are scheduled locally on your device. We do not run a push-notification server.</p>
+  <p><strong>Data stored on your device.</strong> Log entries made without a connection are stored on your device until they can be uploaded, and your settings are stored on your device.</p>
 
   <h2>2. HOW DO WE PROCESS YOUR INFORMATION?</h2>
   <p>We process your information to:</p>
@@ -78,13 +86,21 @@
   <p>If you are in the EU or UK, the GDPR applies. If you are in Canada, PIPEDA applies. You may withdraw consent at any time.</p>
 
   <h2>4. WHEN AND WITH WHOM DO WE SHARE YOUR INFORMATION?</h2>
-  <p>We do not sell or share your personal information with third parties for commercial purposes. We may share information in connection with a business transfer (merger, acquisition) or as required by law.</p>
+  <p>We do not sell your personal information or share it for advertising. We use the following service providers, who process data on our behalf only to provide their service:</p>
+  <ul>
+    <li><strong>Railway</strong> — hosting of our servers and database, where your account, voyages, log entries and crew data are stored.</li>
+    <li><strong>RevenueCat</strong> — subscription management (account ID, name, email, purchase history).</li>
+    <li><strong>Apple / Google</strong> — payment processing for in-app purchases.</li>
+    <li><strong>Open-Meteo</strong> — weather lookups (position coordinates only).</li>
+    <li><strong>OpenFreeMap</strong> — map tiles for the voyage map (your device's IP address, as with any website).</li>
+  </ul>
+  <p>We may also share information in connection with a business transfer (merger, acquisition) or as required by law.</p>
 
   <h2>5. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
   <p>We retain your personal information for as long as you have an account with us. When you delete your account, we delete all associated data from our active databases within 30 days.</p>
 
   <h2>6. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
-  <p>We implement appropriate technical and organizational security measures. Crew member passport numbers and medical notes are encrypted at rest. All data is transmitted over HTTPS. However, no electronic transmission is 100% secure.</p>
+  <p>We implement appropriate technical and organizational security measures. Crew member passport numbers and medical notes are individually encrypted in our database (AES-256-GCM), so they cannot be read from the database alone. All data is transmitted over HTTPS, and passwords are stored only as salted hashes. However, no electronic transmission or storage is 100% secure.</p>
 
   <h2>7. DO WE COLLECT INFORMATION FROM MINORS?</h2>
   <p>We do not knowingly collect data from children under 18. If you believe we have collected data from a minor, contact us at <a href="mailto:matejcikmathias@gmail.com">matejcikmathias@gmail.com</a>.</p>
